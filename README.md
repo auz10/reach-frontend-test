@@ -33,6 +33,8 @@ All of the above were mainly chosen with speed of development in mind. Given tha
 
 - **Bespoke video controls**
   - I would have liked to have built out custom video play/pause etc buttons and a progress indicator that mapped the frame data as a "tooltip" that displayed as the video played.
+- **Menu click outside to close slide in panel**
+  - Theres a couple of ways to acheive this, either capture the click/touch event anywhere else on the page or to have the panel be full width but half of it transparent and add the close event there.
 - **More types**
   - There could definitely be a more comprehensive use of types and I would go back and add places they are missing.
 - **Routing, with React Router, was a bit of a waste of time**
