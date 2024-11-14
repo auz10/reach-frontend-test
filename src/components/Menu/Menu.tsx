@@ -1,5 +1,6 @@
 import { Link, NavLink } from 'react-router-dom';
 import { Data, data } from '../../utils/mockData';
+import { FaceSmileIcon } from '@heroicons/react/16/solid';
 
 interface MenuProps {
   showMenu: boolean;
@@ -12,9 +13,9 @@ function Menu({ showMenu }: MenuProps) {
         showMenu ? '-translate-x-56 md:translate-x-0' : 'translate-x-0'
       }`}
     >
-      <div className="flex h-12 max-h-12 items-center border-b px-6 border-default">
+      <div className="flex h-12 max-h-12 items-center justify-center border-b px-6 border-default">
         <Link to="/videos/1">
-          <h1 className="font-bold ml-[-4px]">Reach FE Test</h1>
+          <FaceSmileIcon className='size-8' />
         </Link>
       </div>
       <nav role="menu" aria-orientation="vertical">

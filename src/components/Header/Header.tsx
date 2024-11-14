@@ -1,4 +1,4 @@
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/16/solid';
+import { Bars3Icon, BeakerIcon, XMarkIcon } from '@heroicons/react/16/solid';
 import { Dispatch, SetStateAction } from 'react';
 
 interface HeaderProps {
@@ -10,7 +10,11 @@ interface HeaderProps {
 function Header({ title, showMenu, setShowMenu }: HeaderProps) {
   return (
     <div className="flex h-12 max-h-12 min-h-12 items-center justify-between py-2 px-5 border-b border-default">
-      <span className="font-bold">{title}</span>
+      <span className="flex items-center font-bold">
+        Reach Industries Frontend Assessment{' '}
+        <BeakerIcon className="size-6 mx-2" />{' '}
+        <span className="font-light">{title}</span>
+      </span>
       <div
         className="block md:hidden"
         role="button"
