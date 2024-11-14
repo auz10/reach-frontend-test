@@ -75,6 +75,7 @@ function VideoPlayer({ video, annotations }: Props) {
         src={video}
         onLoadedData={() => handleVideoReady()}
         onSeeked={() => handleSeek()}
+        playsInline={true}
       ></video>
       <div className="absolute top-0 left-0 bg-black bg-opacity-70">
         {JSON.stringify(frameInfo)}
