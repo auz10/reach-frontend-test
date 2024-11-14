@@ -10,10 +10,12 @@ interface HeaderProps {
 function Header({ title, showMenu, setShowMenu }: HeaderProps) {
   return (
     <div className="flex h-12 max-h-12 min-h-12 items-center justify-between py-2 px-5 border-b border-default">
-      <span className="flex items-center font-bold">
-        Reach Industries Frontend Assessment{' '}
-        <BeakerIcon className="size-6 mx-2" />{' '}
-        <span className="font-light">{title}</span>
+      <span className="flex items-center font-bold gap-2">
+        <h1 className="text-sm md:text-base">
+          Reach Industries Frontend Assessment
+        </h1>
+        <BeakerIcon className="size-6 hidden md:block" />
+        <span className="font-light text-sm md:text-base">{title}</span>
       </span>
       <div
         className="block md:hidden"
